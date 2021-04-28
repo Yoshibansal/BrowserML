@@ -1,0 +1,54 @@
+body {
+  background-color: whitesmoke;
+  margin: 2em;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  margin: auto;
+}
+
+p {
+  text-align: center;
+  font-size: 24px;
+}
+
+.container {
+  margin-top: 3em;
+  text-align: center;
+}
+
+label {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+button:disabled {
+  background: #dddddd;
+}
+
+button {
+  background-color: gray;
+  color: aliceblue;
+}
+
+footer {
+  margin-top: 5em;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  height: 25px;
+  width: auto;
+}
+
+@media screen and (min-width: 1500px) {
+  .container-cta {
+    padding: 0em 20em;
+  }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Browser model</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+  <body>
+    <h1>2x-1</h1>
+    <p>when deep learning find the relation 2x-1</p>
+
+    <div class="container">
+      <label for="input">Input : </label>
+      <input type="number" id="testInput" name="input" placeholder="Input" />
+      <button id="btn" type="button" onclick="predict();">Get Value</button>
+    </div>
+
+    <div class="container">
+      <textarea name="result" id="result" cols="30" rows="10"></textarea>
+    </div>
+
+    <section>
+      <div>
+        <div class="container-cta">
+          <p>
+            When you open console you can see the summary of model as well as
+            training stats for every epoch. This model is a simplest model with
+            just one layer having one neuron. Trained on a data X = [-1.0, 0.0,
+            1.0, 2.0, 3.0, 4.0] and Y = [-3.0, -1.0, 2.0, 3.0, 5.0, 7.0].
+
+            <br /><br />
+            This model get trained on browser itself.
+            <br /><br />
+            Tech used: HTML, CSS, Javascrpit, TensorflowJS
+            <!-- <br>
+            <ul>
+              <li>&lt;HTML&gt;</li>
+            </ul> -->
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        Yoshi Bansal &copy
+        <a href="https://github.com/Yoshibansal">
+          <img src="images/github-logo.svg" alt="github logo" /> </a
+        ><br />
+        <a href="mailto:bansalyoshi@gmail.com">bansalyoshi@gmail.com</a>
+      </p>
+    </footer>
+
+    <script lang="js" src="index.js"></script>
+  </body>
+</html>
