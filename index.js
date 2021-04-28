@@ -53,7 +53,7 @@ const ys = tf.tensor2d([-3.0, -1.0, 2.0, 3.0, 5.0, 7.0], [6, 1]);
 
 //training and enabling the button after it
 doTraining(model).then(() => {
-    alert("Training done!!!");
+    document.getElementById("process").innerText = "Model is ready to predict new values";
     button1.disabled = false;
 });;
 
