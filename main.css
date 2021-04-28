@@ -25,6 +25,10 @@ label {
   font-size: 20px;
 }
 
+.process {
+  color: red;
+}
+
 button:disabled {
   background: #dddddd;
 }
