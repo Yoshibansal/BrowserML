@@ -5,11 +5,10 @@ async function doTraining(model){
                 { epochs: 500,
                   callbacks:{
                       onEpochEnd: async(epoch, logs) =>{
-                          console.log("Epoch:"
-                                      + epoch
-                                      + " Loss:"
-                                      + logs.loss);
-
+                          var temp = "Epoch: " + epoch
+                                    + "  Loss: " + logs.loss
+                          console.log(temp);
+                          document.getElementById("boxed").innerHTML = temp;
                       }
                   }
                 });
@@ -74,5 +73,6 @@ document.getElementById("testInput")
 //predict function
 function predict(){
     var input_val = parseInt(document.getElementById("testInput").value);
-    document.getElementById("result").innerHTML = model.predict(tf.tensor2d([input_val], [1,1]));
+    var output_val = model.predict(tf.tensor2d([input_val], [1,1]));
+    document.getElementById("result").innerHTML += "X=" + input_val + ", Y=" + output_val.arraySync() + "\n";
 }
