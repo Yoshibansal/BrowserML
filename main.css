@@ -29,6 +29,13 @@ label {
   color: red;
 }
 
+.boxed {
+  border: 1px solid black;
+  margin: 0 30em;
+  text-align: center;
+  font-size: 20px;
+}
+
 button:disabled {
   background: #dddddd;
 }
