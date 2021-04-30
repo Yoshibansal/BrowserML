@@ -2,4 +2,4 @@
 get started
 
 
-https://deepinfinty-first.netlify.app/
+Site in action: https://deepinfinity-first.netlify.app/
